@@ -20,7 +20,7 @@ class ReadyScreen extends React.Component {
         <SafeAreaView style={styles.container}>
           <StatusBar barStyle="light-content" />
           <Text style={styles.title}>
-            {`옷깃에 스치려면\n${this.props.batteryRate}%\n남았어요`}
+            {`옷깃에 스치려면\n${String(this.props.batteryRate)}%\n남았어요`}
           </Text>
           <View style={styles.batteryOuter}>
             <LinearGradient
